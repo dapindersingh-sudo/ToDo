@@ -33,7 +33,7 @@ function removeElement(e){
     let inp= document.getElementById("myInput");
     let liTag=document.createElement("li");
     liTag.classList.add("li-items");
-    liTag.innerHTML=`${inp.value} <button class="btn btn-sm id=${ID} btn-danger">X</button>`;
+    liTag.innerHTML=`${inp.value} <button onclick="removeElement(this)" class="btn btn-sm id=${ID} btn-danger">X</button>`;
     olList.appendChild(liTag);
 
    
